@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Akakom Parking Station</string>
-
+    <string-array name="merk">
+        <item>Honda</item>
+        <item>Kawasaki</item>
+        <item>Suzuki</item>
+        <item>Yamaha</item>
+    </string-array>
 </resources>

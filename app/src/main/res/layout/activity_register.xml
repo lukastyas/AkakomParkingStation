@@ -7,6 +7,20 @@
     android:background="#67809F"
     tools:context=".Register">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarregis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/logo"
         android:layout_width="198dp"
@@ -87,4 +101,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.871" />
+
+
 </android.support.constraint.ConstraintLayout>

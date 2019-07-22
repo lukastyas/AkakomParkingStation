@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.akakomparkingstation">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QRcode"></activity>
-        <activity android:name=".ScanBar" />
+        <activity android:name=".ScanBarcode"></activity>
+        <activity android:name=".Admin" />
+        <activity android:name=".QRcode" />
         <activity android:name=".ListUser" />
         <activity android:name=".Detail" />
         <activity android:name=".List_Admin" />
-
         <activity android:name=".Register" />
         <activity android:name=".MainActivity">
             <intent-filter>
