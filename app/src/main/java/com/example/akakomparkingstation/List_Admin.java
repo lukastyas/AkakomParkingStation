@@ -48,11 +48,12 @@ public class List_Admin extends AppCompatActivity {
 
             if (cekAda(nama1, user1)) {
                 addData(nama1, user1);
-                Toast.makeText(this, "Dia mau parkir data ditambah", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "\n" +
+                        "He wants to add data parking", Toast.LENGTH_LONG).show();
             } else {
                 SQLiteDatabase db = dbhelper.getWritableDatabase();
                 db.execSQL("delete from " + "data" + " where nama='" + nama1 + "' AND user='" + user1 + "';");
-                Toast.makeText(this, "Dia mau pergi hapus data", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "He wants to go data deleted", Toast.LENGTH_LONG).show();
             }
         }
         view();
